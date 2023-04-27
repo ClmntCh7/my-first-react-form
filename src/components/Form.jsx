@@ -88,10 +88,7 @@ const Form = ({
             value={password}
             className={hasError && "inputError"}
           /> 
-          {/* <i className="eye" onMouseDown={handlePwdVisibility}><AiFillEye/></i> */}
-          <i className="eye" onMouseDown={(test)=>{
-              console.log(test)
-          }}><AiFillEye/></i>
+          <i className="eye" onMouseDown={handlePwdVisibility}><AiFillEye/></i>
         </label>
         
         <label htmlFor="confirmPwd">
