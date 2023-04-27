@@ -34,6 +34,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 form label {
@@ -41,11 +42,14 @@ form label {
   flex-direction: column;
 }
 
-form button {
+button {
   height: 45px;
   background-color: #5C47D3;
   border-radius: 5px;
   color: white;
+  font-size: 15px;
+  padding: 10px;
+  width: 250px;
 }
 
 .stepTwo {
@@ -56,11 +60,15 @@ form button {
 }
 
 .results {
-  background-color: salmon;
+  background-color: #F2F2F2;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 5px;
+  width: 250px;
 }
 
+.results p {
+padding: 10px;
+}
 
 .inputError {
   border: 1px solid red;

@@ -7,7 +7,7 @@ const StepTwo = ({ setSubmitted, name, email, password }) => {
   return (
     <div className="stepTwo">
       <div>
-        <h1>Result</h1>
+        <h1>Results</h1>
       </div>
       <div className="results">
         <p>Name : {name}</p>
