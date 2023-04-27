@@ -1,5 +1,3 @@
-// import { useState } from "react";
-
 const StepTwo = ({ setSubmitted, name, email, password }) => {
   const handleEditInfo = () => {
     setSubmitted(false);

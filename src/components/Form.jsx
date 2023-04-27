@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AiFillEye } from "react-icons/ai";
 
 const Form = ({
   setSubmitted,
@@ -12,6 +13,7 @@ const Form = ({
   setconfirmPwd,
 }) => {
   const [hasError, setHasError] = useState(false);
+  const [passwordVisibility, setPwdVisibility] =useState(false)
 
   const handleNameChange = (event) => {
     const value = event.target.value;
@@ -43,10 +45,16 @@ const Form = ({
     }
   };
 
+  const handlePwdVisibility = () => {
+    setPwdVisibility(true)
+  }
+
+  console.log();
+
   return (
     <div className="form-container">
       <div>
-        <h1>Create Account</h1>
+        <h1>Create Account <i></i></h1>
       </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">
@@ -74,13 +82,18 @@ const Form = ({
           Password
           <input
             id="password"
-            type="password"
+            type={!passwordVisibility? "password": "text"}
             placeholder="YourPassword23"
             onChange={handlePwdChange}
             value={password}
             className={hasError && "inputError"}
-          />
+          /> 
+          {/* <i className="eye" onMouseDown={handlePwdVisibility}><AiFillEye/></i> */}
+          <i className="eye" onMouseDown={(test)=>{
+              console.log(test)
+          }}><AiFillEye/></i>
         </label>
+        
         <label htmlFor="confirmPwd">
           Confirm your password
           <input

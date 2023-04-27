@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Form from "./components/Form";
-import StepTwo from "./components/stepTwo";
+import StepTwo from "./components/StepTwo";
 
 const App = () => {
   const [submitted, setSubmitted] = useState(false);
